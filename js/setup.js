@@ -55,7 +55,6 @@ for (var i = 0; i < wizards.length; i++) {
 similarListElement.appendChild(fragment);
 userDialog.querySelector('.setup-similar').classList.remove('hidden');
 
-///////////
 // 4.10.1
 var setupOpen = document.querySelector('.setup-open');
 var openPopup = function () {
@@ -128,7 +127,6 @@ wizardCoatId.addEventListener('click', function () {
 // 4.10.5
 var fireballColorArr = ['#ee4830', '#30a8ee', '#5ce6c0', '#e848d5', '#e6e848]'];
 var fireballWrapEl = document.getElementsByClassName('setup-fireball-wrap')[0];
-console.log(fireballWrapEl);
 fireballWrapEl.addEventListener('click', function () {
   fireballWrapEl.style.backgroundColor = makeRandom(fireballColorArr);
 });
