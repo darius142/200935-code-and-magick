@@ -1,6 +1,6 @@
 'use strict';
 
-(function() {
+(function () {
   var ESC_KEY_CODE = 27;
   var ENTER_KEY_CODE = 13;
   var setup = document.querySelector('.setup');
