@@ -47,8 +47,8 @@
       function (evt) {
         if (evt.keyCode === ESC_KEY_CODE) {
           evt.stopPropagation();
+        }
       }
-    }
   );
 
   var similarListElement = userDialog.querySelector('.setup-similar-list');
