@@ -44,9 +44,9 @@
   });
 
   document.querySelector('.setup-user-name').addEventListener('keydown',
-    function (evt) {
-      if (evt.keyCode === ESC_KEY_CODE) {
-        evt.stopPropagation();
+      function (evt) {
+        if (evt.keyCode === ESC_KEY_CODE) {
+          evt.stopPropagation();
       }
     }
   );
