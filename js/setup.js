@@ -10,6 +10,8 @@
   var onPopupEscPress = function (evt) {
     if (evt.keyCode === ESC_KEY_CODE) {
       closePopup();
+      setup.style.top = '';
+      setup.style.left = '';
     }
   };
 
@@ -35,20 +37,24 @@
 
   setupClose.addEventListener('click', function () {
     closePopup();
+    setup.style.top = '';
+    setup.style.left = '';
   });
 
   setupClose.addEventListener('keydown', function (evt) {
     if (evt.keyCode === ENTER_KEY_CODE) {
       closePopup();
+      setup.style.top = '';
+      setup.style.left = '';
     }
   });
 
   document.querySelector('.setup-user-name').addEventListener('keydown',
-      function (evt) {
-        if (evt.keyCode === ESC_KEY_CODE) {
-          evt.stopPropagation();
-        }
+    function (evt) {
+      if (evt.keyCode === ESC_KEY_CODE) {
+        evt.stopPropagation();
       }
+    }
   );
 
   var similarListElement = userDialog.querySelector('.setup-similar-list');
